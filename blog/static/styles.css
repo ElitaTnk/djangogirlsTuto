@@ -1,0 +1,105 @@
+a {
+  color: MEDIUMPURPLE;
+  transition: color .5s ease-in-out;
+}
+
+a:hover {
+  color: REBECCAPURPLE;
+  text-decoration: none;
+}
+
+.cat__background {
+  background: -moz-linear-gradient(top, rgba(221,160,221,0.53) 0%, rgba(224,168,224,0) 12%, rgba(247,225,245,0) 100%);
+  background: -webkit-linear-gradient(top, rgba(221,160,221,0.53) 0%,rgba(224,168,224,0) 12%,rgba(247,225,245,0) 100%);
+  background: linear-gradient(to bottom, rgba(221,160,221,0.53) 0%,rgba(224,168,224,0) 12%,rgba(247,225,245,0) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#87dda0dd', endColorstr='#00f7e1f5',GradientType=0 );
+}
+
+.cat__jumbotron {
+  background-image: url('http://placekitten.com/g/1900/900');
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 45vh;
+  padding: 2rem 0 0;
+}
+
+.cat__jumbotron h1 {
+  height: inherit;
+  background: inherit;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  font: 900 16vw cookie, cursive;
+  text-align: center;
+  filter: invert(1) grayscale(1) contrast(9) drop-shadow(0.05em 0.05em green);
+}
+
+.cat__jumbotron--small {
+  height: 20rem;
+  width: auto;
+  padding: 0;
+}
+
+.cat__post {
+  margin-bottom: 1.125rem;
+  padding: .875rem;
+}
+
+.cat__post h1,
+.cat__post small {
+  margin-bottom: 1.125rem;
+}
+
+.cat__post--detail p {
+  line-height: 1.75;
+  letter-spacing: 1px;
+  font-size: 1.25rem;
+}
+
+.cat__post--detail h1 {
+  font-family: cookie, cursive;
+  font-size: 5rem;
+}
+
+.cat__post--detail small {
+  display: block;
+  padding-bottom: 0.875rem;
+}
+
+
+.cat__responsive {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.cat__back-button {
+  margin-bottom: 1.25rem;
+  font-weight: 500;
+  display: inline-block;
+}
+
+.cat__back-button:after {
+  content: '';
+  width: 0;
+  height: 3px;
+  display: block;
+  background-color: REBECCAPURPLE;
+  transition: width .3s linear;
+}
+
+.cat__back-button:hover:after {
+  width: 100%;
+}
+
+.cat__title {
+  font: 300 2rem cookie, cursive;
+  border-bottom: 2px solid violet;
+
+}
+
+footer {
+  border-top: 2px solid green;
+  font: 300 1.725rem cookie, cursive;
+  padding: 1rem 0;
+}

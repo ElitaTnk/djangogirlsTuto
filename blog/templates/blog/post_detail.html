@@ -1,0 +1,26 @@
+{% extends 'blog/default.html' %}
+
+{% block content %}
+  <div class="cat__post cat__post--detail">
+    <a href="{% url 'post_list' %}" class="cat__back-button"> < Home</a>
+    <div class="jumbotron cat__jumbotron--small">
+      {% if post.image %}
+        <img src={{ post.image.url }} alt="" class="cat__responsive"/>
+      {% else %}
+        <img src="http://placekitten.com/g/900/300" alt="" class="cat__responsive"/>
+      {% endif %}
+    </div>
+    <div class="col-md-11">
+      {% if post.published_date %}
+        <small class="date">
+          {{ post.published_date }}
+        </small>
+      {% endif %}
+
+      <h1>{{ post.title }}</h1>
+    </div>
+    <div class="col-md-10">
+      <p>{{ post.text|linebreaksbr }}</p>
+    </div>
+  </div>
+{% endblock %}

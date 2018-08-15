@@ -12,15 +12,13 @@
     <link rel="stylesheet" href="{% static 'styles.css' %}">
     <title>Hello, world!</title>
   </head>
-  <body>
-    <div class="jumbotron jumbotron-fluid cat__jumbotron">
-      <h1 class="display-4">Cat Blog!</h1>
-    </div>
+  <body class="cat__background">
     <div class="content container">
-      <h5 class="cat__title">Select a post to read</h5>
-      <div class="row">
-        {% block content %}
-        {% endblock %}
+      <div class="row justify-content-center">
+        <div class="col-md-12">
+          {% block content %}
+          {% endblock %}
+        </div>
       </div>
     </div>
     <footer class="content container">
